@@ -23,13 +23,13 @@ exports.handler = async (event, context) => {
     const eventObj = {
       functionName: context.functionName,
       SNS_Message: `Message ${sns_message} sent at ${date}`,
-      SNS_Subject: 'New message from publisher',
+      SNS_Subject: 'New message from helo',
     };
 
     // Params object for SNS
     const params = {
       Message: `Message ${sns_message} sent at ${date}`,
-      Subject: 'New message from publisher',
+      Subject: 'New message from ibara',
       TopicArn: process.env.SNSTopicArn
     };
     
